@@ -14,7 +14,7 @@ numberButtons.forEach((number) => {
     } else {
       // when clicking a new number and it's not highlighted orange then..
       //////////////////////////////////////////////////
-      //resets all btns to its origanal color
+      //resets all btns to its origal color
       numberButtons.forEach((number) => {
         number.style.backgroundColor = "";
         number.style.color = "";
@@ -32,6 +32,9 @@ numberButtons.forEach((number) => {
   number.addEventListener("click", function () {
     // after i clicked it, it gets the selected number and store it in the selectedNumber variable.
     const selectedNumber = this.textContent;
+    /*When using the 'this' keyword 
+when i click the button it takes the value 
+and set as the textContent and store in the selectedNumber variable*/
 
     //from my html, i grabbed the id from special-number and updated its text number everytime i click it.
     document.getElementById("special-number").textContent /* originally 4*/ =
